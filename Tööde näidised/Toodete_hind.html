@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Arvutamine</title>
+<meta charset="utf-8" />
+<script>
+function arvuta() {
+document.getElementById("vastus").innerHTML=
+document.getElementById("hind").value*
+document.getElementById("kogus").value;
+}
+</script>
+</head>
+<body>
+<h1>Summa</h1>
+<div> 
+Toote hind:
+<input type="text" id="hind" />
+Kogus: 
+<input type="text" id="kogus" />
+<input type="button" value="Sisesta" onclick="arvuta()" />
+</div>
+<div id="vastus">
+</div>
+</body>
+</html>

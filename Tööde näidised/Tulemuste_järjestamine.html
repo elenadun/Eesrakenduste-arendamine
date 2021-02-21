@@ -1,0 +1,11 @@
+<!doctype html>
+<html> 
+ <head>  
+ <title>Aeg</title> 
+ <script>    var tulemused=[        {"eesnimi":"Juku", "punkte": 7},        {"eesnimi":"Kati", "punkte": 8},        {"eesnimi":"Mati", "punkte": 5}      ];      function algus(){        kuvaTulemused();      }   
+ function sordiTulemusedPunktideJ2rgi(){        tulemused.sort(function(t1, t2){return t2.punkte-t1.punkte});      }      function kuvaTulemused(){         sordiTulemusedPunktideJ2rgi();         var t="<ol>";         for(var i=0; i<tulemused.length; i++){           t+="<li>"+tulemused[i].eesnimi+": "+             tulemused[i].punkte+" punkti</li>";         }         t+="</ol>";         document.getElementById("vastus").innerHTML=t;      }      function lisaTulemus(){        if(document.getElementById("kast1").value.length==0){return;}        tulemused.push(          {            "eesnimi":document.getElementById("kast1").value,            "punkte": parseInt(document.getElementById("kast2").value)          }        );        document.getElementById("kast1").value="";        document.getElementById("kast2").value="";        kuvaTulemused();      }    </script> 
+ </head> 
+ <body onload="algus()">    Eesnimi: <input type="text" id="kast1" />    Punkte: <input type="text" id="kast2" />    <input type="button" value="Lisa tulemus" onclick="lisaTulemus()" />    <div id="vastus"> 
+ </div> 
+ </body>
+ </html>
