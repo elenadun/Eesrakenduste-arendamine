@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html> 
+ <head>  
+ <title>Programmikoodi katsetus</title>
+ <meta charset="UTF-8" />
+ <script type="text/javascript">    function tervita(){   document.getElementById("vastus").innerHTML=     "Tere, "+document.getElementById("eesnimi").value+document.getElementById("perekonnanimi").value; }
+ </script> 
+ </head> 
+ <body>  
+ <h1>Eesnimi</h1> Palun sisesta oma eesnimi:  <input type="text" id="eesnimi" /> 
+ <h1>Perekonnanimi</h1> Palun sisesta oma perekonnanimi:  <input type="text" id="perekonnanimi" /> 
+ <input type="button" value="OK" onclick="tervita();" /> 
+ <div id="vastus">    Vastuse koht.  </div> 
+ </body>
+ </html>
