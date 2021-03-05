@@ -1,0 +1,63 @@
+body{
+    margin:0;
+}
+
+input[type=text]{
+    /*width: calc(100% - 50px);*/
+    width:100%;
+    margin: 4px 0px;
+    padding: 14px 20px;
+    border: 1px solid #ccc;
+    /*border-width:2px;*/
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #009900;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: lime;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loadLocal{
+    background-color: #000099;
+}
+
+#loadLocal:hover{
+    background-color: lightseagreen;
+}
+
+#deleteLocal{
+    background-color: #EE0000;
+}
+
+#deleteLocal:hover{
+    background-color: #440000;
+}
+
+#dataContainer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:600px){ /*screen экран монитора*/
+    /*Change the background color of the <body> element to "lightblue" when the browser window is 600px wide or less*/
+    #buttonContainer{
+        flex-direction: column;
+    }
+}
