@@ -1,0 +1,63 @@
+body{
+    margin:0;
+}
+
+input{ /*дизайн строки ввода */
+    width: 25%;
+    margin: 5px;
+    height: 25px;
+}
+
+#buttonContainer input[type="button"]{
+    background-color: green;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    height: 37px;
+    border:none;
+}
+
+#buttonContainer input[type="button"]:hover{ /*кнопка нажатия*/
+    background-color: #009900;
+    font-weight: 700;
+}
+
+li.entry{
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+    margin: 5px;
+    border: 2px solid lightblue;
+    padding: 1%;
+}
+
+.entry-value{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+}
+
+.delete-button{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+
+.delete-button:hover{
+    font-size: 22px;
+    color: red;
+    text-decoration-color: red;
+}
+
+
+
+#buttonContainer, #inputContainer{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.task-completed{
+    text-decoration: line-through;
+}
